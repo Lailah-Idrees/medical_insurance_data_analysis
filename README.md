@@ -1,12 +1,26 @@
-# Project XYZ
+# Medical Insurance Data Analysis
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Medical Insurance Data Analysis** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* This dataset shows the medical insurance charges each individual pays plus their additional attributes such as their bmi, age, smoking status and sex. The datset consists of 1338 rows and 7 columns
+The dataset was sourced from kaggle and can be found [here](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
+Additional columns were added during the ETL stage of Data Analysis so the total resultant columns are as follow:
+* Age
+* Sex
+* bmi
+* Weight_category
+* Children
+* Smoker
+* Region
+* Charges
+* male_yes
+* smoker_yes
+* region_encoded
+
 
 
 ## Business Requirements
