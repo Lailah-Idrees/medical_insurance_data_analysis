@@ -6,9 +6,10 @@
 
 
 ## Dataset Content
-* This dataset shows the medical insurance charges each individual pays plus their additional attributes such as their bmi, age, smoking status and sex. The datset consists of 1338 rows and 7 columns
-The dataset was sourced from kaggle and can be found [here](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
-Additional columns were added during the ETL stage of Data Analysis so the total resultant columns are as follow:
+
+This dataset contains medical insurance charges for individual policyholders, along with key demographic and lifestyle attributes such as age, BMI, sex, children, age and smoking status. The original dataset consists of 1,338 rows and 7 columns and was sourced from Kaggle link [here](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
+
+During the ETL phase of the data analysis process, additional features were created and added to the dataset. As a result, the final dataset includes the following columns:
 * Age
 * Sex
 * bmi
@@ -20,7 +21,6 @@ Additional columns were added during the ETL stage of Data Analysis so the total
 * male_yes
 * smoker_yes
 * region_encoded
-
 
 
 ## Business Requirements
