@@ -46,9 +46,20 @@ During the ETL phase of the data analysis process, additional features were crea
 **Age is a strong predictor of insurance charges, with older individuals paying more.**
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+1. Data Extraction 
+* Find appropriate data from kaggle and download
+* load data into project notebook and begin intial exploration
+2. Data Cleaning
+* Identify any null or empty values and discard and remove any dupliated data entries.
+* Encode any categorical data using OneHotEncoder and Ordinal Encoder
+* Outlier detection: remove outliers or use an appropriate transformer to reduce or remove outlier skewing effect
+* Use boxplots to compare before and after transforming data to ensure the chosen technique worked
+3. Load Data
+* save cleaned dataset so it can be used across different notebooks
+4. Data Visulisation
+* Use MatPlotLib, Seaborn and plotly to visual and gain insights into the data in order to verify hypothesis and meet the business requirements
+5. Report
+* Summarise finding and draw a conclusion on the results
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
