@@ -28,22 +28,22 @@ During the ETL phase of the data analysis process, additional features were crea
 
 
 ## Hypothesis and how to validate?
-Smokers will incur higher insurance charges across all combinations of demographic and lifestyle variables.
+**Smokers will incur higher insurance charges across all combinations of demographic and lifestyle variables.**
 * Use bivariate and multivariate visualisations that include smoking status as either an axis or a hue to compare charges across different groups and interactions.
 
-Women with children will pay more for insurance than men with children
+**Women with children will pay more for insurance than men with children.**
 * Create a multivariate boxplot for both men and women
 
-BMI is positively correlated with insurance charges — higher BMI leads to higher costs.
+**BMI is positively correlated with insurance charges — higher BMI leads to higher costs.**
 * plot a scatterplot and a heatmap to check the correlation and how strong it is
 
-Smokers with a high bmi will incure the highest insurance charges overall
+**Smokers with a high bmi will incure the highest insurance charges overall.**
 * facetted scatte plot one for smokers and one for non-snokers with  bmi and charges as the axis
 
-Gender does not significantly affect insurance charges.
+**Gender does not significantly affect insurance charges.**
 * Barplot and heat map
 
-Age is a strong predictor of insurance charges, with older individuals paying more.
+**Age is a strong predictor of insurance charges, with older individuals paying more.**
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
