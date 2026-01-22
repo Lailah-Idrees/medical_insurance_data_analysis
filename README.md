@@ -130,7 +130,7 @@ Used to build interactive charts such as the boxplot that compared gender with n
 ## Credits 
 
 * Data source from [here](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
-* Code for switching weigh column can be found [here](https://saturncloud.io/blog/pandas-tips-reorder-columns/#:~:text=To%20move%20a%20column%20to,modifies%20the%20DataFrame%20in%2Dplace.&text=In%20summary%2C%20depending%20on%20the,columns%20to%20the%20desired%20order.)
+* Code for switching weight column can be found [here](https://saturncloud.io/blog/pandas-tips-reorder-columns/#:~:text=To%20move%20a%20column%20to,modifies%20the%20DataFrame%20in%2Dplace.&text=In%20summary%2C%20depending%20on%20the,columns%20to%20the%20desired%20order.)
 * Code for displaying data in descending order can be found [here](https://github.com/DaniDL346/Global_Methane_Flux_Analysis/blob/main/README.md)
 
 ### Content 
