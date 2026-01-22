@@ -24,11 +24,26 @@ During the ETL phase of the data analysis process, additional features were crea
 
 
 ## Business Requirements
-* Describe your business requirements
+* In conducting analysis on fluctuations in medical insurance charges the business aims to understand they key factors that influence insurance charges across different customer groups. The business aims to identify patterns that drive higher or lower insurance costs through demographic and lifestyle analysis. This insight will support more accurate pricing strategies and ensure that insurance is aligned with customer needs
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+Smokers will incur higher insurance charges across all combinations of demographic and lifestyle variables.
+* Use bivariate and multivariate visualisations that include smoking status as either an axis or a hue to compare charges across different groups and interactions.
+
+Women with children will pay more for insurance than men with children
+* Create a multivariate boxplot for both men and women
+
+BMI is positively correlated with insurance charges — higher BMI leads to higher costs.
+* plot a scatterplot and a heatmap to check the correlation and how strong it is
+
+Smokers with a high bmi will incure the highest insurance charges overall
+* facetted scatte plot one for smokers and one for non-snokers with  bmi and charges as the axis
+
+Gender does not significantly affect insurance charges.
+* Barplot and heat map
+
+Age is a strong predictor of insurance charges, with older individuals paying more.
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
