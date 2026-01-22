@@ -38,7 +38,7 @@ During the ETL phase of the data analysis process, additional features were crea
 * plot a scatterplot and a heatmap to check the correlation and how strong it is
 
 **Smokers with a high bmi will incure the highest insurance charges overall.**
-* facetted scatte plot one for smokers and one for non-snokers with  bmi and charges as the axis
+* facetted scatter plot one for smokers and one for non-snokers with  bmi and charges as the axis
 
 **Gender does not significantly affect insurance charges.**
 * Barplot and heat map
@@ -62,56 +62,76 @@ During the ETL phase of the data analysis process, additional features were crea
 * Summarise finding and draw a conclusion on the results
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
-
+The primary business objective of this analysis is to understand what is driving the differences in insurance charges, to make sure they are fair and representative of individual circumstacne and to ensure all individual recieve the right cover.
+* Identify key cost drivers
+* Assess fairness across demographic group
+* Ensure data quality for reliable insights
+* Communicate findings clearly to stakeholders 
+ Various techniques will be used to clean the data and make sure it is suitbale for visualisaton. Encoding and transformers will on categorical data and to remove outliers. When it came to visualtions plots from matoplotlib, seaborn and ploty were used to make sense of the data
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* **Desciptive Statistics**
+Used to get a general understanding of distribution of all numerical values
+* Limitations: This technique cannot reveal relatioships between varibles
+
+* **Correlation analysis (Scatter plots & Heatmaps)**
+Used to map and quantify correlations between variable such as age, BMI, smoking status, Sex and number of children
+* Limitation: correlation does not imply causation and only captures linear relationships
+
+* **Data cleaning and preprocessing**
+
+Included handling duplicates, encoding categorical variables, and preparing the dataset for analysis.
+Limitation: The dataset was relatively small and lacked certain variables (e.g., income, occupation), which restricted the depth of analysis.
+
+The analysis followed a progressive, layered structure:
+
+**Data cleaning and preparation**  
+Ensured the dataset was reliable and usable format before any insights were drawn.
+
+**Bivariate analysis**
+Examined relationships between pairs of variables (e.g., age vs charges, BMI vs charges).
+
+**Multivariate exploration**
+Used pairplots and grouped visualisations to understand how variables interact (e.g., smoker × BMI, sex × children).
+
+**Hypothesis testing** 
+
+AI is imbedded in the notebook so was used in an assistive way to fix error codes and explain how certain code blocks work.
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
+* Were there any data privacy, bias or fairness issues with the data? No
 * How did you overcome any legal or societal issues?
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* No bugs detected 
+* Did you recognise gaps in your knowledge, and how did you address them? When it came to formatting plot like subsetting them or isolating specific data to used in analysis was something i struggled with. I reviewed my notes and looked online for code to help
+
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
-
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+* What challenges did you face, and what strategies were used to overcome these challenges? My vs code would crash or my git commit cycle wouldn't sync changes to my github repository. Overcoming this challeneges was farily simple i would use the built in git commit cycle instead
+* What new skills or tools do you plan to learn next based on your project experience? becoming more efficient at finding solutions to coding errors
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* pandas
+Used for loading, cleaning, and preparing the dataset.
+
+* matplotlib
+Used to plot scatter plots, boxplots and histograms
+
+
+* seaborn
+Used for pairplots, heatmap and scatter plots. Helps with correlation analysis
+
+* plotly
+Used to build interactive charts such as the boxplot that compared gender with number of children and charges
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Data source from [here](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
+* Code for switching weigh column can be found [here](https://saturncloud.io/blog/pandas-tips-reorder-columns/#:~:text=To%20move%20a%20column%20to,modifies%20the%20DataFrame%20in%2Dplace.&text=In%20summary%2C%20depending%20on%20the,columns%20to%20the%20desired%20order.)
+* Code for displaying data in descending order can be found [here](https://github.com/DaniDL346/Global_Methane_Flux_Analysis/blob/main/README.md)
 
 ### Content 
 
